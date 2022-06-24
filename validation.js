@@ -8,3 +8,13 @@ text.addEventListener('input',function()
     else
     nameerror.textContent="Name is incorrect";
 });
+const email=document.querySelector("#email");
+let emailerror=document.querySelector(".emailerror");
+email.addEventListener('input',function()
+{
+    let emailRegex=RegExp("^[a-z]+(.[a-z])+@[A-Za-z]+.[a-z]{2,3}(.[a-z]{2})?$");
+    if(emailRegex.test(email.value))
+    emailerror.textContent="";
+    else
+    emailerror.textContent="Email is incorrect";
+});
