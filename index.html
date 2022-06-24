@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>HTML FORM</title>
+        <link rel="stylesheet" href="style.css"></head>
+        <body>
+           
+                <form>
+                    <header class="headercss"><h1>User Form</h1></header>
+                    <div class="Form">
+                        <label>Enter your Name:</label>
+                        <input type="text" placeholder="Enter Name" id="name" name="name">
+                        <error-output class="nameerror" for ="text"></error-output>
+                    </div>
+                   
+                    <button>submit</button>
+                
+                <h3>RULES</h3>
+                <ul>
+             <li>First name starts with Cap and has minimum 3 characters</li>
+                <li> Email - E.g. abc.xyz@bl.co.in </li> 
+                <li>Mobile Format - E.g. 91 9919819801</li>
+                <li>Password:
+                    <ul>
+                        <li>minimum 8 Characters</li>
+                            <li> Should have at least 1 Upper Case</li>
+                            <li>  Should have at least 1 numeric number in the password</li>
+                            <li> Has exactly 1 Special Character</li>
+                    </ul>
+                </li>
+                </ul>
+
+        </form>
+        <script src="validation.js"></script>
+    \
+        </body>
+        </html>
