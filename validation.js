@@ -28,3 +28,13 @@ mobile.addEventListener('input',function()
     else
     moberror.textContent="Number is incorrect";
 });
+const Password=document.querySelector("#password");
+let paserror=document.querySelector(".paserror");
+Password.addEventListener('input',function()
+{
+    let pasRegex=RegExp( "^(?=.*[@#$%0-9A-Z])[@#$%0-9a-zA-Z]{8,}$");
+    if(pasRegex.test(Password.value))
+    paserror.textContent="";
+    else
+    paserror.textContent="Password is incorrect";
+});
