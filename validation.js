@@ -18,3 +18,13 @@ email.addEventListener('input',function()
     else
     emailerror.textContent="Email is incorrect";
 });
+const mobile=document.querySelector("#mobile");
+let moberror=document.querySelector(".moberror");
+mobile.addEventListener('input',function()
+{
+    let mobileRegex=RegExp("^[1-9]{2,4}[ ]{1}[6-9]{1}[0-9]{9}$");
+    if(mobileRegex.test(mobile.value))
+    moberror.textContent="";
+    else
+    moberror.textContent="Number is incorrect";
+});
